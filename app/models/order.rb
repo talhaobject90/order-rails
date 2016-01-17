@@ -1,4 +1,4 @@
 class Order < ActiveRecord::Base
   has_many :items , :dependent => :destroy
-  belongs_to :user
+#  belongs_to :user
 end

@@ -1,4 +1,5 @@
 class OrderSerializer < ActiveModel::Serializer
   attributes :id, :title , :customer ,:total , :date
-  belongs_to :user
+  has_many :items
+#  belongs_to :user
 end
